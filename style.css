@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato, Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato&display=swap');
 
 * {
   margin: 0;
@@ -35,6 +35,7 @@ body {
   width: 50%;
   text-align: center;
   align-self: center;
+  border: 1px #ff4f38 solid;
 }
 
 .side-menu {
@@ -194,13 +195,17 @@ nav {
   max-width: 1036px;
   margin: auto;
   display: flex;
-  align-items: center;
+
+  /* align-items: center; */
   padding: 0 23px;
 }
 
 .logo-container {
   width: 50px;
   margin: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -273,7 +278,6 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 1012px;
 }
 
 .headline-introduction {
@@ -638,6 +642,7 @@ footer h3 {
     list-style-type: none;
     justify-content: space-between;
     max-width: 679px;
+    align-items: center;
   }
 
   .nav-menu-item {
@@ -701,7 +706,21 @@ footer h3 {
 
   .nav-menu-item a {
     text-decoration: none;
-    color: unset;
+    color: #868686;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .cc-campaign {
+    margin: 13px 0 13px 10px;
+    padding: 15px;
+    border: #ff4f38 solid 7px;
+
+    /* box-sizing:content-box; */
   }
 
   /* famous athlete */
