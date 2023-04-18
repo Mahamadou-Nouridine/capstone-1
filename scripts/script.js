@@ -5,6 +5,15 @@ const sidebar = document.querySelector('.sidebar');
 const body = document.querySelector('body');
 const cross = document.querySelector('.cross');
 const athleteWrapper = document.querySelector('.athlete-wrapper');
+const navigation = document.querySelector('.navigation');
+
+// sticky navbar
+window.onscroll = () => {
+  if (window.scrollY > 30) {
+    navigation.style.backgroundColor = 'white';
+  } else navigation.style.backgroundColor = 'rgb(255, 255, 255, 0.4)';
+};
+// sticky navbar
 
 // side menu
 const closeSide = () => {
@@ -28,8 +37,8 @@ for (let index = 0; index < datas.length; index += 1) {
   athlete.classList.add('athlete');
   athlete.innerHTML = `
     <div class="athlete-picture">
-                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                        <img src=${data.image} class="athlete-image" />
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" alt = "mozaic"/>
+                        <img src=${data.image} class="athlete-image" alt = ${data.name} />
                     </div>
 
                     <div class="athlete-infos">
