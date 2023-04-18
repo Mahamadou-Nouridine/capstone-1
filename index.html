@@ -13,23 +13,63 @@
 </head>
 
 <body>
-    <header>
-        <nav class="content-container">
-            <div class="menu-bars">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="logo-container">
-                <img src="./images/logo.png" alt="" class="logo">
-            </div>
+    <div class="sidebar"> 
+        <div class="cross-container">
+            <i class="fa-sharp fa-solid fa-xmark cross"></i>
+        </div>
+        <ul class="side-menu">
+            <li class="side-menu-item"><a href="./pages/about.html">About</a></li>
+            <li class="side-menu-item"><a href="#">Program</a></li>
+            <li class="side-menu-item"><a href="#">Join</a></li>
+            <li class="side-menu-item"><a href="#">Sponsors</a></li>
+            <li class="side-menu-item"><a href="#">News</a></li>
+        </ul>
+        <hr>
+        <ul class="side-nav-menu">
+            <!-- <li class="side-nav-item"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="side-nav-item"><i class="fa-brands fa-twitter"></i></li> -->
+            <li class="side-nav-item">English</li>
+            <li class="side-nav-item">My Page</li>
+            <li class="side-nav-item">Logout</li>
+        </ul>
+        <hr>
 
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#">About</a></li>
-                <li class="nav-menu-item"><a href="#">Program</a></li>
-                <li class="nav-menu-item"><a href="#">Join</a></li>
-                <li class="nav-menu-item"><a href="#">Sponsors</a></li>
-                <li class="nav-menu-item"><a href="#">News</a></li>
-            </ul>
-        </nav>
+        <ul class="side-social-menu">
+            <li class="side-social-item side-social"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="side-social side-social"><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+    </div>
+    <header>
+        <div class="navigation">
+            <div class="top-nav">
+                <div class="content-container">
+                    <ul class="top-nav-menu">
+                        <li class="top-nav-item"><i class="fa-brands fa-facebook-f"></i></li>
+                        <li class="top-nav-item"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="top-nav-item">English</li>
+                        <li class="top-nav-item">My Page</li>
+                        <li class="top-nav-item">Logout</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="content-container">
+                <div class="menu-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo-container">
+                    <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="./pages/about.html">About</a></li>
+                    <li class="nav-menu-item"><a href="#">Program</a></li>
+                    <li class="nav-menu-item"><a href="#">Join</a></li>
+                    <li class="nav-menu-item"><a href="#">Sponsors</a></li>
+                    <li class="nav-menu-item"><a href="#">News</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <section class="headline">
@@ -60,7 +100,7 @@
     <section class="activities">
         <div class="content-container">
             <h2 class="activities-title section-title">Highlight of some sports
-                <hr>
+                <div class="hr"></div>
             </h2>
             <div class="activities-card-wrapper">
                 <div class="activity">
@@ -71,29 +111,29 @@
                 </div>
 
                 <div class="activity">
-                    <img src="./images/football-logo.png" alt="" class="activity-image">
-                    <h3 class="activity-title">Football</h3>
+                    <img src="./images/basketball.png" alt="" class="activity-image">
+                    <h3 class="activity-title">Basketball</h3>
                     <p class="activity-description">Team sport played
                         between two teams of 11 players each who primarily use their feet ...</p>
                 </div>
 
                 <div class="activity">
-                    <img src="./images/football-logo.png" alt="" class="activity-image">
-                    <h3 class="activity-title">Football</h3>
+                    <img src="./images/waterpolo.png" alt="" class="activity-image">
+                    <h3 class="activity-title">waterpolo</h3>
                     <p class="activity-description">Team sport played
                         between two teams of 11 players each who primarily use their feet ...</p>
                 </div>
 
                 <div class="activity">
-                    <img src="./images/football-logo.png" alt="" class="activity-image">
-                    <h3 class="activity-title">Football</h3>
+                    <img src="./images/athlete.png" alt="" class="activity-image">
+                    <h3 class="activity-title">Marathon</h3>
                     <p class="activity-description">Team sport played
                         between two teams of 11 players each who primarily use their feet ...</p>
                 </div>
 
                 <div class="activity">
-                    <img src="./images/football-logo.png" alt="" class="activity-image">
-                    <h3 class="activity-title">Football</h3>
+                    <img src="./images/volleyball.png" alt="" class="activity-image">
+                    <h3 class="activity-title">Volley Ball</h3>
                     <p class="activity-description">Team sport played
                         between two teams of 11 players each who primarily use their feet ...</p>
                 </div>
@@ -104,107 +144,115 @@
     </section>
 
     <section class="famous-athlete">
-        <h2 class="section-title">Some Famous Athletes
-            <hr>
-        </h2>
-        <div class="athlete-wrapper">
-            <div class="athlete">
-                <div class="athlete-picture">
-                    <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                    <img src="./images/alphaga.jpg" class="athlete-image" />
+        <div class="content-container">
+            <h2 class="section-title">Some Famous Athletes
+                <div class="hr"></div>
+            </h2>
+            <div class="athlete-wrapper">
+                <div class="athlete">
+                    <div class="athlete-picture">
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
+                        <img src="./images/alphaga.jpg" class="athlete-image" />
+                    </div>
+
+                    <div class="athlete-infos">
+                        <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
+                        <h5 class="athlete-sport">Taikwondo</h5>
+                        <hr>
+                        <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo
+                            after a
+                            cousin died from an injury in a fight ...</p>
+                    </div>
                 </div>
 
-                <div class="athlete-infos">
-                    <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
-                    <h5 class="athlete-sport">Taikwondo</h5>
-                    <hr>
-                    <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo after a
-                        cousin died from an injury in a fight ...</p>
+                <div class="athlete">
+                    <div class="athlete-picture">
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
+                        <img src="./images/alphaga.jpg" class="athlete-image" />
+                    </div>
+
+                    <div class="athlete-infos">
+                        <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
+                        <h5 class="athlete-sport">Taikwondo</h5>
+                        <hr>
+                        <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo
+                            after a
+                            cousin died from an injury in a fight ...</p>
+                    </div>
                 </div>
+
+                <div class="athlete">
+                    <div class="athlete-picture">
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
+                        <img src="./images/alphaga.jpg" class="athlete-image" />
+                    </div>
+
+                    <div class="athlete-infos">
+                        <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
+                        <h5 class="athlete-sport">Taikwondo</h5>
+                        <hr>
+                        <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo
+                            after a
+                            cousin died from an injury in a fight ...</p>
+                    </div>
+                </div>
+
+                <div class="athlete">
+                    <div class="athlete-picture">
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
+                        <img src="./images/alphaga.jpg" class="athlete-image" />
+                    </div>
+
+                    <div class="athlete-infos">
+                        <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
+                        <h5 class="athlete-sport">Taikwondo</h5>
+                        <hr>
+                        <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo
+                            after a
+                            cousin died from an injury in a fight ...</p>
+                    </div>
+                </div>
+
+                <div class="athlete">
+                    <div class="athlete-picture">
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
+                        <img src="./images/alphaga.jpg" class="athlete-image" />
+                    </div>
+
+                    <div class="athlete-infos">
+                        <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
+                        <h5 class="athlete-sport">Taikwondo</h5>
+                        <hr>
+                        <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo
+                            after a
+                            cousin died from an injury in a fight ...</p>
+                    </div>
+                </div>
+
+                <div class="athlete">
+                    <div class="athlete-picture">
+                        <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
+                        <img src="./images/alphaga.jpg" class="athlete-image" />
+                    </div>
+
+                    <div class="athlete-infos">
+                        <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
+                        <h5 class="athlete-sport">Taikwondo</h5>
+                        <hr>
+                        <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo
+                            after a
+                            cousin died from an injury in a fight ...</p>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="athlete">
-                <div class="athlete-picture">
-                    <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                    <img src="./images/alphaga.jpg" class="athlete-image" />
-                </div>
-
-                <div class="athlete-infos">
-                    <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
-                    <h5 class="athlete-sport">Taikwondo</h5>
-                    <hr>
-                    <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo after a
-                        cousin died from an injury in a fight ...</p>
-                </div>
-            </div>
-
-            <div class="athlete">
-                <div class="athlete-picture">
-                    <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                    <img src="./images/alphaga.jpg" class="athlete-image" />
-                </div>
-
-                <div class="athlete-infos">
-                    <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
-                    <h5 class="athlete-sport">Taikwondo</h5>
-                    <hr>
-                    <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo after a
-                        cousin died from an injury in a fight ...</p>
-                </div>
-            </div>
-
-            <div class="athlete">
-                <div class="athlete-picture">
-                    <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                    <img src="./images/alphaga.jpg" class="athlete-image" />
-                </div>
-
-                <div class="athlete-infos">
-                    <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
-                    <h5 class="athlete-sport">Taikwondo</h5>
-                    <hr>
-                    <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo after a
-                        cousin died from an injury in a fight ...</p>
-                </div>
-            </div>
-
-            <div class="athlete">
-                <div class="athlete-picture">
-                    <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                    <img src="./images/alphaga.jpg" class="athlete-image" />
-                </div>
-
-                <div class="athlete-infos">
-                    <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
-                    <h5 class="athlete-sport">Taikwondo</h5>
-                    <hr>
-                    <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo after a
-                        cousin died from an injury in a fight ...</p>
-                </div>
-            </div>
-
-            <div class="athlete">
-                <div class="athlete-picture">
-                    <img src="./images/mozaic_thumbnail.png" class="picture-corner" />
-                    <img src="./images/alphaga.jpg" class="athlete-image" />
-                </div>
-
-                <div class="athlete-infos">
-                    <h4 class="athlete-name">Abdoul Razak Alphaga</h4>
-                    <h5 class="athlete-sport">Taikwondo</h5>
-                    <hr>
-                    <p class="athlete-history">When Issoufou was 7, his father forbade him from taking taekwondo after a
-                        cousin died from an injury in a fight ...</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <section class="partners">
         <div class="content-container">
             <h2 class="section-title">Partners
-                <hr>
+                <div class="hr"></div>
             </h2>
         </div>
 
@@ -229,7 +277,7 @@
 
     <footer class="footer">
         <div class="content-container">
-            <h3 >
+            <h3>
                 Paris 2024 <br>
                 Summer Olympics
             </h3>
