@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* side barr  */
+.sidebar {
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/activities-bg.png");
+  background-color: #282b32;
+  padding: 50px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: all ease-in-out 1s;
+}
+
+.open-side {
+  transform: translateX(0);
+  transition: all ease-in-out 1s;
+}
+
+.sidebar hr {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  border: 1px #ff4f38 solid;
+}
+
+.side-menu {
+  margin-bottom: 30px;
+}
+
+.side-menu,
+.side-nav-menu,
+.side-social-menu {
+  list-style-type: none;
+}
+
+.side-menu-item a {
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: solid 2px white;
+}
+
+.side-nav-item {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+}
+
+.side-nav-menu {
+  margin-top: 30px;
+}
+
+.side-social-menu {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.side-social {
+  margin: 0 20px 0 0;
+  font-size: 30px;
+  color: white;
+}
+
+.cross-container {
+  text-align: end;
+}
+
+.cross {
+  font-size: x-large;
+  color: white;
+  cursor: pointer;
+}
+
+/* side barr  */
+
+/* comon shared properties */
+.section-title .hr {
+  width: 50px;
+  margin: 10px auto;
+  background-color: #ff4f38;
+  height: 1px;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.section-title,
+.see-sports small {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+section,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1012px;
+  position: relative;
+  padding: 0 23px;
+}
+
+footer .content-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 23px 0;
+}
+
+.about-footer {
+  background-color: #fff;
+  color: #3b3e45;
+}
+
+.home-footer,
+.home-partners {
+  display: none;
+}
+
+/* comon shared properties */
+
+/* header */
+.top-nav {
+  height: 30px;
+  background-color: #3e3e3e;
+  width: 100vw;
+  display: none;
+}
+
+.top-nav .content-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  max-width: 1036px;
+  height: 30px;
+}
+
+.top-nav-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.top-nav-item {
+  margin-left: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.navigation {
+  width: 100vw;
+  position: fixed;
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 98;
+}
+
+.nav-menu {
+  display: none;
+}
+
+nav {
+  max-width: 1036px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 23px;
+}
+
+.logo-container {
+  width: 50px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.menu-bars {
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* header */
+
+/* headline */
+.headline-presentation {
+  font-family: Lato, sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  text-align: left;
+  color: #ff4f38;
+}
+
+.headline-hello {
+  font-family: Lato, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  color: #ff4f38;
+}
+
+.headline-description {
+  font-family: Lato, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  margin: 47px 0 0 0;
+  color: #515151;
+  padding: 10px 10px 57px 10px;
+}
+
+.headline-date {
+  font-family: Gothic A1, sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  color: #595959;
+  text-align: left;
+}
+
+.headline-place {
+  font-family: Gothic A1, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #868686;
+}
+
+.headline .content-container {
+  padding: 200px 23px 97px 23px;
+}
+
+.headline {
+  background-image: url("./images/headline-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.headline-introduction {
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+.headline-date-place {
+  padding: 10px;
+}
+
+/* headline */
+
+/* activities  */
+.activity {
+  background-color: #3b3e455d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 500px;
+}
+
+.activity-title {
+  margin: 0 12px;
+  color: #ff5438;
+}
+
+.activity-image {
+  max-width: 80px;
+}
+
+.activities .content-container {
+  padding: 31px 23px;
+}
+
+.see-sports small {
+  color: #fff;
+  font-size: 15px;
+  border-bottom: white solid 1px;
+  cursor: pointer;
+}
+
+.see-sports {
+  display: flex;
+  justify-content: center;
+}
+
+.activity-description {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: start;
+  color: #fff;
+}
+
+.activities-card-wrapper {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities {
+  background-image: url("./images/activities-bg.png");
+  background-color: #282b32;
+}
+
+/* activities  */
+
+/* famous athlete */
+.famous-athlete .content-container {
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.see-more {
+  width: 97%;
+  height: 38px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  margin: 30px 0;
+  color: #000;
+  box-shadow: 2px 2px 4px #00000040;
+  background-color: white;
+  border: #dcdcdc 1px solid;
+  border-radius: 3px;
+}
+
+.see-more span {
+  color: #ff4f38;
+}
+
+.athlete {
+  display: flex;
+  justify-content: start;
+  max-width: 503px;
+  padding: 2px;
+  margin: 10px 0;
+}
+
+.athlete-picture {
+  position: relative;
+  height: 130px;
+  width: 130px;
+}
+
+.famous-athlete .section-title {
+  color: #000;
+}
+
+.picture-corner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.athlete-image {
+  height: 115px;
+  width: 115px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.athlete-infos {
+  max-width: 305px;
+  width: 50%;
+  min-width: 229px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.athlete-infos hr {
+  width: 20px;
+}
+
+.athlete-sport {
+  font-family: Lato, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ff4f38;
+}
+
+.athlete-name {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.athlete-history {
+  font-family: Lato, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.athlete-wrapper {
+  margin: 50px 0 0 0;
+}
+
+.athlete-hide {
+  display: none;
+}
+
+/* famous athlete */
+
+/* partners */
+.partners-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.partners {
+  background-color: #414246;
+}
+
+/* partners */
+
+/* footer */
+footer p {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+footer h3 {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+/* footer */
+
+/* about */
+
+/* headline */
+.about-headline {
+  background-color: gray;
+  background-image: url("./images/headline-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-headline-introduction *,
+.about-headline-description {
+  text-align: center;
+}
+
+.about-headline-description {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.about-headline-place {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.about-headline-date {
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #5f5f5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-headline-date-place strong a {
+  color: unset;
+}
+
+.about-headline-date-place {
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.about-headline .content-container {
+  max-width: 793px;
+}
+
+/* headline */
+
+/* alympic logo */
+.olympic-logo-title {
+  color: #000;
+}
+
+.olympic-logo .content-container {
+  max-width: 793px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+}
+
+.logo-description {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #838383;
+  padding: 37px 0;
+}
+
+.logo-descption-image-container {
+  max-width: 200px;
+}
+
+.logo-description-image {
+  width: 100%;
+}
+
+/* alympic logo */
+
+/* past olympic */
+.past-olympic1,
+.past-olympic2 {
+  max-width: 432px;
+  min-width: 334px;
+  max-height: 236px;
+  min-height: 183.31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.past-olympic1 {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(255, 79, 56, 0.4),
+      rgb(255, 79, 56, 0.4)
+    ),
+    url("images/beijing.webp");
+  background-size: cover;
+  margin: 0 0 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.past-olympic2 {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(255, 79, 56, 0.4),
+      rgb(255, 79, 56, 0.4)
+    ),
+    url("images/tokyo.webp");
+  background-size: cover;
+  background-color: #ff4f38;
+}
+
+.past-olympic h3 {
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: white;
+}
+
+.past-olympic p {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+/* past olympic */
+
+/* about */
+
+@media screen and (min-width: 768px) {
+  /* header */
+  .top-nav {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    max-width: 679px;
+    align-items: center;
+  }
+
+  .nav-menu-item {
+    margin: 0 0 0 20px;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    box-shadow: unset;
+    justify-content: space-between;
+    padding: 5px 23px;
+  }
+
+  .logo-container {
+    width: 50px;
+    margin: unset;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  /* header */
+
+  /* activities  */
+  .activities-card-wrapper {
+    display: flex;
+    flex-direction: unset;
+    align-items: unset;
+  }
+
+  .activity {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .activity-description {
+    text-align: center;
+  }
+
+  /* activities  */
+
+  /* famous athlete */
+  .athlete-wrapper {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 24px;
+    margin: 50px 0 74px 0;
+  }
+
+  .athlete-hide {
+    display: flex;
+  }
+
+  .nav-menu-item a {
+    text-decoration: none;
+    color: #868686;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .cc-campaign {
+    margin: 13px 0 13px 10px;
+    padding: 15px;
+    border: #ff4f38 solid 7px;
+  }
+
+  .see-more {
+    display: none;
+  }
+
+  /* famous athlete */
+
+  .past-olympics {
+    min-width: 100%;
+    max-width: 887px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .past-olympic {
+    margin: 0 0 0 5px;
+    min-height: 236px;
+    max-width: 430px;
+  }
+
+  .about-partners {
+    display: none;
+  }
+
+  /* footer */
+  .home-footer,
+  .home-partners {
+    display: flex;
+  }
+
+  .about-footer {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+
+  /* footer */
+}
