@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato&display=swap");
 
 * {
   margin: 0;
@@ -114,7 +114,7 @@ body {
 }
 
 .section-title,
-.see-sports {
+.see-sports small {
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 28px;
@@ -143,8 +143,13 @@ footer .content-container {
 }
 
 .about-footer {
-  background-color: #2e2e2e;
-  color: #fff;
+  background-color: #fff;
+  color: #3b3e45;
+}
+
+.home-footer,
+.home-partners {
+  display: none;
 }
 
 /* comon shared properties */
@@ -194,7 +199,6 @@ footer .content-container {
 }
 
 nav {
-  box-shadow: 4px 4px 4px 0 #00000040;
   max-width: 1036px;
   margin: auto;
   display: flex;
@@ -226,15 +230,15 @@ nav {
 /* headline */
 .headline-presentation {
   font-family: Lato, sans-serif;
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 80px;
+  font-weight: bolder;
   text-align: left;
   color: #ff4f38;
 }
 
 .headline-hello {
   font-family: Lato, sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 400;
   text-align: left;
   color: #ff4f38;
@@ -242,31 +246,32 @@ nav {
 
 .headline-description {
   font-family: Lato, sans-serif;
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 36px;
   letter-spacing: -0.01em;
   text-align: left;
   margin: 47px 0 0 0;
   color: #515151;
-  background-color: rgb(255, 255, 255, 0.7);
   padding: 10px 10px 57px 10px;
 }
 
 .headline-date {
   font-family: Gothic A1, sans-serif;
-  font-size: 20px;
+  font-size: 42px;
   font-weight: 900;
   letter-spacing: -0.08em;
+  color: #595959;
   text-align: left;
 }
 
 .headline-place {
   font-family: Gothic A1, sans-serif;
-  font-size: 13px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.02em;
   text-align: left;
+  color: #868686;
 }
 
 .headline .content-container {
@@ -287,8 +292,6 @@ nav {
 
 .headline-date-place {
   padding: 10px;
-  color: white;
-  background-color: rgb(128, 128, 128, 0.5);
 }
 
 /* headline */
@@ -317,17 +320,22 @@ nav {
   padding: 31px 23px;
 }
 
-.see-sports {
+.see-sports small {
   color: #fff;
   font-size: 15px;
   border-bottom: white solid 1px;
   cursor: pointer;
 }
 
+.see-sports {
+  display: flex;
+  justify-content: center;
+}
+
 .activity-description {
   font-family: Lato, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.06em;
   text-align: start;
@@ -354,6 +362,26 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.see-more {
+  width: 97%;
+  height: 38px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  margin: 30px 0;
+  color: #000;
+  box-shadow: 2px 2px 4px #00000040;
+  background-color: white;
+  border: #dcdcdc 1px solid;
+  border-radius: 3px;
+}
+
+.see-more span {
+  color: #ff4f38;
 }
 
 .athlete {
@@ -433,7 +461,11 @@ nav {
 }
 
 .athlete-wrapper {
-  margin: 50px 0 74px 0;
+  margin: 50px 0 0 0;
+}
+
+.athlete-hide {
+  display: none;
 }
 
 /* famous athlete */
@@ -446,7 +478,7 @@ nav {
 }
 
 .partners {
-  background-color: rgb(65, 66, 70, 0.8);
+  background-color: #414246;
 }
 
 /* partners */
@@ -702,6 +734,11 @@ footer h3 {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 24px;
+    margin: 50px 0 74px 0;
+  }
+
+  .athlete-hide {
+    display: flex;
   }
 
   .nav-menu-item a {
@@ -721,6 +758,10 @@ footer h3 {
     border: #ff4f38 solid 7px;
   }
 
+  .see-more {
+    display: none;
+  }
+
   /* famous athlete */
 
   .past-olympics {
@@ -735,4 +776,21 @@ footer h3 {
     min-height: 236px;
     max-width: 430px;
   }
+
+  .about-partners {
+    display: none;
+  }
+
+  /* footer */
+  .home-footer,
+  .home-partners {
+    display: flex;
+  }
+
+  .about-footer {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+
+  /* footer */
 }

@@ -11,7 +11,11 @@ const navigation = document.querySelector('.navigation');
 window.onscroll = () => {
   if (window.scrollY > 30) {
     navigation.style.backgroundColor = 'white';
-  } else navigation.style.backgroundColor = 'rgb(255, 255, 255, 0.4)';
+    navigation.style.boxShadow = '1px 0 5px grey';
+  } else {
+    navigation.style.backgroundColor = 'rgb(255, 255, 255, 0.4)';
+    navigation.style.boxShadow = 'unset';
+  }
 };
 // sticky navbar
 
@@ -35,6 +39,9 @@ for (let index = 0; index < datas.length; index += 1) {
   const data = datas[index];
   const athlete = document.createElement('div');
   athlete.classList.add('athlete');
+  if (index > 1) {
+    athlete.classList.add('athlete-hide');
+  }
   athlete.innerHTML = `
     <div class="athlete-picture">
                         <img src="./images/mozaic_thumbnail.png" class="picture-corner" alt = "mozaic"/>
